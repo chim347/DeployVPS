@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+		<PackageReference Include="Hangfire" Version="1.8.9" />
+		<PackageReference Include="Hangfire.SqlServer" Version="1.8.9" />
+		<PackageReference Include="Microsoft.AspNetCore.ApiAuthorization.IdentityServer" Version="7.0.9" />
+		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.9" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.9" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.9" />
+		<PackageReference Include="Microsoft.AspNetCore.SpaProxy" Version="7.0.9" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.9" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.9" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.9">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="7.0.9" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+		<PackageReference Include="System.Runtime.Handles" Version="4.3.0" />
+		<PackageReference Include="System.Runtime.InteropServices" Version="4.1.0" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LinhChiDoiSOS.Application\LinhChiDoiSOS.Application.csproj" />
+    <ProjectReference Include="..\LinhChiDoiSOS.Infrastructure\LinhChiDoiSOS.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
