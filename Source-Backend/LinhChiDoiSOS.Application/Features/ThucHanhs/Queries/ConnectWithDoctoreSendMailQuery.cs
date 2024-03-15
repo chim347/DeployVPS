@@ -1,5 +1,6 @@
 ﻿using LinhChiDoiSOS.Application.Common.Exceptions;
-using LinhChiDoiSOS.Application.Features.Auth.Queries.ResetPassword;
+using LinhChiDoiSOS.Application.Common.Interfaces;
+using LinhChiDoiSOS.Application.Features.Payments.PaymentWithSendMail;
 using LinhChiDoiSOS.Domain.IdentityModels;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
@@ -10,30 +11,30 @@ using System.Net.Mail;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using LinhChiDoiSOS.Application.Common.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace LinhChiDoiSOS.Application.Features.Payments.PaymentWithSendMail
+namespace LinhChiDoiSOS.Application.Features.ThucHanhs.Queries
 {
-    public class PaymentWithSendMailQuery : IRequest<string>
+    public class ConnectWithDoctoreSendMailQuery : IRequest<string>
     {
         public string Email { get; set; }
     }
 
-    public class PaymentWithSendMailQueryHandler : IRequestHandler<PaymentWithSendMailQuery, string>
+    public class ConnectWithDoctoreSendMailQueryHandler : IRequestHandler<ConnectWithDoctoreSendMailQuery, string>
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private ILinhChiDoiSOSDbContext _dbContext;
 
-        public PaymentWithSendMailQueryHandler(UserManager<ApplicationUser> userManager, ILinhChiDoiSOSDbContext dbContext)
+        public ConnectWithDoctoreSendMailQueryHandler(UserManager<ApplicationUser> userManager, ILinhChiDoiSOSDbContext dbContext)
         {
             _userManager = userManager;
             _dbContext = dbContext;
         }
 
-        public async Task<string> Handle(PaymentWithSendMailQuery request, CancellationToken cancellationToken)
+        public async Task<string> Handle(ConnectWithDoctoreSendMailQuery request, CancellationToken cancellationToken)
         {
-            try {
+            try
+            {
                 var user = await _userManager.FindByEmailAsync(request.Email);
                 if (user == null)
                     throw new NotFoundException(nameof(ApplicationUser), request.Email);
@@ -87,11 +88,11 @@ namespace LinhChiDoiSOS.Application.Features.Payments.PaymentWithSendMail
                                     </head>
                                     <body>
                                         <div class=""container"">
-                                            <h1>Thank You for Your Payment!</h1>
+                                            <h1>Thank You for Register With Doctor!</h1>
                                             <div class=""message"">
                                                 Dear [Customer Name], <br><br>
-                                                Thank you for your payment for our premium application. We greatly appreciate your support! <br><br>
-                                                Your request is being processed. Please allow a few minutes for our administrators to review and activate your premium account.
+                                                Thank you for connecting with expert Le Trung Nghia.  <br><br>
+                                                Please keep in touch closely to be connected with the doctor for support on skills.
                                             </div>
                                             <div class=""note"">
                                                 If you have any questions, feel free to contact us. 
@@ -103,7 +104,7 @@ namespace LinhChiDoiSOS.Application.Features.Payments.PaymentWithSendMail
                                     </body>
                                     </html>";
                 bodyOfUser = bodyOfUser.Replace("[Customer Name]", user.Fullname);
-                await SendEmailAsync(request.Email, "PaymentSuccessfully", bodyOfUser);
+                await SendEmailAsync(request.Email, "Kết nối với Chuyên Gia", bodyOfUser);
                 var bodyOfAdmin = @"<!DOCTYPE html>
                                     <html lang=""en"">
                                     <head>
@@ -168,9 +169,9 @@ namespace LinhChiDoiSOS.Application.Features.Payments.PaymentWithSendMail
                                     </head>
                                     <body>
                                         <div class=""container"">
-                                            <h1>New Premium Registration</h1>
+                                            <h1>Kết nối với chuyên gia</h1>
                                             <div class=""message"">
-                                                The user <span class=""action-required"">abc</span> has registered for a premium account. 
+                                                The user <span class=""action-required"">abc</span> Bác sĩ Lê Trung Nghĩa. 
                                             </div>
                                             <table class=""details-table"">
                                                 <tr>
@@ -183,31 +184,29 @@ namespace LinhChiDoiSOS.Application.Features.Payments.PaymentWithSendMail
                                                 </tr>
                                             </table>
                                             <div>
-                                                Please log into the admin panel to review payment details and activate the account.
+                                                Please check the notifications and register this user for a schedule to connect with the expert.
                                             </div>
                                         </div>
                                     </body>
                                     </html>";
-                bodyOfAdmin = bodyOfAdmin.Replace("[emailOfUser]",user.Email);
+                bodyOfAdmin = bodyOfAdmin.Replace("[emailOfUser]", user.Email);
                 bodyOfAdmin = bodyOfAdmin.Replace("[DayRegis]", DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
-                await SendEmailAsync("khancapsos.webapp@gmail.com", $"Customer email Payment: {request.Email}", bodyOfAdmin);
+                await SendEmailAsync("khancapsos.webapp@gmail.com", $"Customer email: {request.Email}", bodyOfAdmin);
 
-                var customer = await _dbContext.Customer.Where(x => x.ApplicationUserId ==user.Id).SingleOrDefaultAsync();
+                /*var customer = await _dbContext.Customer.Where(x => x.ApplicationUserId == user.Id).SingleOrDefaultAsync();
                 if (customer == null)
                 {
                     throw new BadRequestException($"Error at Send Mail");
-                }
-                customer.IsPremium = 1;
-                _dbContext.Customer.Update(customer);
-                await _dbContext.SaveChangesAsync();
-                return "PaymentSuccessfully. Please wait for me a minute";
+                }*/
+                return "Connect immediately with the expert. Please wait for me a minute";
             }
             catch (Exception ex) { throw new BadRequestException($"Error at ResetPasswordQueryHandler : {ex}"); }
         }
 
         private async Task SendEmailAsync(string email, string subject, string body)
         {
-            try {
+            try
+            {
                 var message = new MailMessage();
                 message.From = new MailAddress("no-reply@gmail.com");
                 message.To.Add(new MailAddress(email));

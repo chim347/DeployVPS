@@ -47,7 +47,7 @@ public class CreateCustomerCommandHandler : IRequestHandler<CreateCustomerComman
             EmailConfirmed = false,
             Address = null,
             BirthDay = null,
-            Image = null,
+            Image = "https://firebasestorage.googleapis.com/v0/b/linhchidoisos.appspot.com/o/avatar%2Fuser132.jpg?alt=media&token=70eb3ce5-4145-4b18-b974-1b741fecba4c",
         };
         var result = await _userManager.CreateAsync(user, request.Password);
         if(result.Succeeded) {

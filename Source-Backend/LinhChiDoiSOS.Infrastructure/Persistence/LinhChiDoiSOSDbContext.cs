@@ -3153,154 +3153,154 @@ Kết luận
                         Id = Guid.Parse("E71A9882-2634-411F-A74C-3A49AE3989B9"),
                         Name = "Viêm xoang",
                         Description = "Viêm xoang là tình trạng viêm nhiễm các túi khí gần mũi và mắt, thường gây đau đầu và áp lực ở vùng mặt. Điều trị bao gồm thuốc và biện pháp giảm triệu chứng.",
-                        UrlImage = "https://drive.google.com/file/d/1wj5O76ORv_qRzr-BF8fqRPEjIHFNqjiD/view?usp=drive_link"
+                        UrlImage = "https://firebasestorage.googleapis.com/v0/b/linhchidoisos.appspot.com/o/ChuanDoan%2F1.png?alt=media&token=b8507450-c048-4ca1-8ded-0bb0f9d8ee43"
                     },
                     new ChuanDoan
                     {
                         Id = Guid.Parse("8D4A29C0-775F-49F6-9598-5DBFACCCCED9"),
                         Name = "Cảm lạnh",
                         Description = "Cảm lạnh là một trong những căn bệnh về đường hô hấp thường gặp phải ở trẻ em và người lớn",
-                        UrlImage = ""
+                        UrlImage = "https://firebasestorage.googleapis.com/v0/b/linhchidoisos.appspot.com/o/ChuanDoan%2F2.png?alt=media&token=9124ffdd-26cf-4702-b5af-f9b6a22e3d5a"
                     },
                     new ChuanDoan
                     {
                         Id = Guid.Parse("984F2FB4-D29C-4959-8A52-1F43F3380DBA"),
                         Name = "Tiêu chảy",
                         Description = "Tiêu chảy là tình trạng mà cơ thể loại bỏ phân đi lỏng hoặc phân nước từ 3 lần/ngày.",
-                        UrlImage = ""
+                        UrlImage = "https://firebasestorage.googleapis.com/v0/b/linhchidoisos.appspot.com/o/ChuanDoan%2F3.png?alt=media&token=01ae1758-b877-4044-bd95-984962050222"
                     },
                     new ChuanDoan
                     {
                         Id = Guid.Parse("689782FB-F292-47FB-9E78-990E92A0E390"),
                         Name = "Táo bón",
                         Description = "Táo bón là tình trạng khó đi đại tiện, phân khô cứng, buồn đi đại tiện mà không đi được phải rặn mạnh phân khó thoát ra, thời gian đi lâu hoặc nhiều ngày mới đi một lần.",
-                        UrlImage = ""
+                        UrlImage = "https://firebasestorage.googleapis.com/v0/b/linhchidoisos.appspot.com/o/ChuanDoan%2F4.png?alt=media&token=8e16723e-692c-4d85-ad9d-9c2bae33b4f8"
                     },
                     new ChuanDoan
                     {
                         Id = Guid.Parse("37437D9F-7753-4EE4-A04D-E1CE1651C54F"),
                         Name = "Đau bụng kinh",
                         Description = "Đau bụng kinh (hay thống kinh) là triệu chứng rất phổ biến, liên quan đến chu kỳ kinh nguyệt của nữ giới.",
-                        UrlImage = ""
+                        UrlImage = "https://firebasestorage.googleapis.com/v0/b/linhchidoisos.appspot.com/o/ChuanDoan%2F5.png?alt=media&token=fef3d98d-4a75-43e8-a646-90f6ce108eb2"
                     },
                     new ChuanDoan
                     {
                         Id = Guid.Parse("0B1820A0-2C22-47AC-80F4-3630863BB890"),
                         Name = "Viêm Amidan",
                         Description = "Viêm amidan là bệnh phổ biến gặp ở mọi lứa tuổi trong cộng đồng, gây ra những triệu chứng đau rát họng, khó nuốt. Nếu không điều trị sớm có thể dẫn đến những ảnh hưởng sức khỏe nghiêm trọng hơn.",
-                        UrlImage = ""
+                        UrlImage = "https://firebasestorage.googleapis.com/v0/b/linhchidoisos.appspot.com/o/ChuanDoan%2F6.png?alt=media&token=c5ed7f55-00a5-4e1d-9392-2e8d74366f11"
                     },
                     new ChuanDoan
                     {
                         Id = Guid.Parse("5E3E996B-CF80-46BE-93A1-E822FDA0D50E"),
                         Name = "Viêm tai giữa",
                         Description = "Viêm tai giữa là một nhóm các bệnh ở tai giữa, là sự tổn thương và viêm nhiễm xuất hiện trong tai giữa do các loại vi khuẩn sinh sôi và phát triển trong tai hoặc bị tác động từ các yếu tố bên ngoài môi trường.",
-                        UrlImage = ""
+                        UrlImage = "https://firebasestorage.googleapis.com/v0/b/linhchidoisos.appspot.com/o/ChuanDoan%2F7.png?alt=media&token=75541064-4a88-4d7b-bad7-6d0d889d78a1"
                     },
                     new ChuanDoan
                     {
                         Id = Guid.Parse("0F3633C8-5E37-4F73-B3F6-35933E195046"),
                         Name = "Thiếu máu não",
                         Description = "Thiếu máu não là tình trạng giảm tuần hoàn máu lên não, dẫn tới giảm cung cấp oxy và dưỡng chất cần thiết cho các hoạt động của não bộ ảnh hưởng tới cầu trúc và chức năng của một phần hoặc nhiều phần trên não.",
-                        UrlImage = ""
+                        UrlImage = "https://firebasestorage.googleapis.com/v0/b/linhchidoisos.appspot.com/o/ChuanDoan%2F8.png?alt=media&token=23a73921-2c42-430d-9d81-9891d5d4c421"
                     },
                     new ChuanDoan
                     {
                         Id = Guid.Parse("AF316D79-6367-4029-A241-BF49FA9C0F56"),
                         Name = "Huyết áp cao",
                         Description = "Cao huyết áp (hay tăng huyết áp) là một bệnh lý mãn tính khi áp lực của máu tác động lên thành động mạch tăng cao.",
-                        UrlImage = ""
+                        UrlImage = "https://firebasestorage.googleapis.com/v0/b/linhchidoisos.appspot.com/o/ChuanDoan%2F9.png?alt=media&token=0a7613e0-d0bd-4b64-9cd4-6db423f75e39"
                     },
                     new ChuanDoan
                     {
                         Id = Guid.Parse("092CD36A-4A80-48EF-BD7A-F4E3E63871BD"),
                         Name = "Covid-19",
                         Description = "Dịch bệnh viêm đường hô hấp cấp do chủng Coronavirus mới (Covid-19) vẫn đang diễn biến rất phức tạp, nó đã lan rộng ra nhiều quốc gia và vùng lãnh thổ khác ngoài Trung Quốc.",
-                        UrlImage = ""
+                        UrlImage = "https://firebasestorage.googleapis.com/v0/b/linhchidoisos.appspot.com/o/ChuanDoan%2F10.png?alt=media&token=326aa412-9ffd-4a44-ae1a-8e6381571c96"
                     },
                     new ChuanDoan
                     {
                         Id = Guid.Parse("EEB8AE18-C9A8-485A-9846-C8647D861DC6"),
                         Name = "Viêm nha chu",
                         Description = "Bệnh nha chu là một bệnh nhiễm trùng nướu nghiêm trọng làm tổn thương mô mềm và phá hủy xương xung quanh răng.",
-                        UrlImage = ""
+                        UrlImage = "https://firebasestorage.googleapis.com/v0/b/linhchidoisos.appspot.com/o/ChuanDoan%2F11.png?alt=media&token=19fdb013-bb67-4c08-a1df-a45811cdd546"
                     },
                     new ChuanDoan
                     {
                         Id = Guid.Parse("491F2B78-009D-4D2E-8AD7-02C25E44DD95"),
                         Name = "Đột quỵ",
                         Description = "Người bị đột quỵ cần được cấp cứu ngay lập tức, thời gian kéo dài càng lâu, số lượng tế bào não chết càng nhiều sẽ ảnh hưởng lớn tới khả năng vận động và tư duy của cơ thể, thậm chí là tử vong.",
-                        UrlImage = ""
+                        UrlImage = "https://firebasestorage.googleapis.com/v0/b/linhchidoisos.appspot.com/o/ChuanDoan%2F12.png?alt=media&token=aac969a3-f28e-4835-ad03-664e1a6bcc3f"
                     },
                     new ChuanDoan
                     {
                         Id = Guid.Parse("2AE51909-7BAA-4DE0-AE83-C13C0498B157"),
                         Name = "Thiếu máu",
                         Description = "Thiếu máu là tình trạng lượng huyết sắc tốc và số lượng hồng cầu có trong máu ngoại vi bị giảm đi, kết quả là thiếu lượng oxy đến các mô của các tế bào trong cơ thể.\r\n",
-                        UrlImage = ""
+                        UrlImage = "https://firebasestorage.googleapis.com/v0/b/linhchidoisos.appspot.com/o/ChuanDoan%2F13.png?alt=media&token=87ec19fe-4d4c-4a31-b483-4edd092b37ca"
                     },
                     new ChuanDoan
                     {
                         Id = Guid.Parse("59A9E104-7D3B-43A9-AFC1-0C58B3AE4016"),
                         Name = "Rối loạn nhịp tim",
                         Description = "Rối loạn nhịp tim là tình trạng xảy ra khi các xung điện điều khiển nhịp tim hoạt động bất thường, khiến tim đập quá nhanh, quá chậm hoặc không đều. ",
-                        UrlImage = ""
+                        UrlImage = "https://firebasestorage.googleapis.com/v0/b/linhchidoisos.appspot.com/o/ChuanDoan%2F14.png?alt=media&token=cfc0e696-e3c0-4bb7-8c3e-06278e059fac"
                     },
                     new ChuanDoan
                     {
                         Id = Guid.Parse("D343E947-DBBA-4631-9796-9364369EFAC4"),
                         Name = "Chèn ép tim cấp",
                         Description = "Chèn ép tim cấp là một trường hợp cấp cứu, cần được chẩn đoán và xử lý nhanh chóng.",
-                        UrlImage = ""
+                        UrlImage = "https://firebasestorage.googleapis.com/v0/b/linhchidoisos.appspot.com/o/ChuanDoan%2F15.png?alt=media&token=6aeac7f1-056f-42ac-b42f-df01d35ace77"
                     },
                     new ChuanDoan
                     {
                         Id = Guid.Parse("ADE4F561-1316-489D-B752-DC042DD5B700"),
                         Name = "Trào ngược axit dạ dày thực quản",
                         Description = "Bệnh trào ngược dạ dày thực quản có thể gây kích ứng niêm mạc thực quản của người bệnh. ",
-                        UrlImage = ""
+                        UrlImage = "https://firebasestorage.googleapis.com/v0/b/linhchidoisos.appspot.com/o/ChuanDoan%2F16.png?alt=media&token=7ce38317-edbf-4419-b2d5-757aa307880e"
                     },
                     new ChuanDoan
                     {
                         Id = Guid.Parse("17617323-50A0-492C-A220-84EA0235735F"),
                         Name = "Đau ruột thừa",
                         Description = "Đau ruột thừa là dấu hiệu cảnh báo ruột thừa đang có vấn đề, thường gặp nhất là viêm ruột thừa, ruột thừa có thể bị vỡ, nguy hiểm đến tính mạng.",
-                        UrlImage = ""
+                        UrlImage = "https://firebasestorage.googleapis.com/v0/b/linhchidoisos.appspot.com/o/ChuanDoan%2F17.png?alt=media&token=5abfa254-9207-401f-a0c7-e26a8dd21758"
                     },
                     new ChuanDoan
                     {
                         Id = Guid.Parse("BAC1C26D-FF9F-4CC7-B4BF-F6009B1C5830"),
                         Name = "Rối loạn tiền đình",
                         Description = "Một số người bị rối loạn tiền đình có thể chịu ảnh hưởng nghiêm trọng của bệnh đến cuộc sống hằng ngày cũng như trong học tập.",
-                        UrlImage = ""
+                        UrlImage = "https://firebasestorage.googleapis.com/v0/b/linhchidoisos.appspot.com/o/ChuanDoan%2F18.png?alt=media&token=a53f2edb-e9c2-48fb-ba1b-239e3f4ecf7f"
                     },
                     new ChuanDoan
                     {
                         Id = Guid.Parse("2E2C200B-4115-4F49-8516-2A33654C2C00"),
                         Name = "Huyết áp thấp",
                         Description = "Huyết áp thấp sẽ nguy hiểm đến tính mạng nếu như không được phòng tránh và chữa trị kịp thời.",
-                        UrlImage = ""
+                        UrlImage = "https://firebasestorage.googleapis.com/v0/b/linhchidoisos.appspot.com/o/ChuanDoan%2F19.png?alt=media&token=6063eac6-6089-4c1e-b8dc-c3462f6f614d"
                     },
                     new ChuanDoan
                     {
                         Id = Guid.Parse("E6513D6E-0D42-480C-925F-7BF931F86CD0"),
                         Name = "Rối loại thần kinh thực vật",
                         Description = "Rối loạn thần kinh thực vật là sự mất cân bằng của hai hệ thống thần kinh giao cảm và phó giao cảm. Bệnh gây đau khiến bệnh nhân gặp phải những hạn chế trong cuộc sống. ",
-                        UrlImage = ""
+                        UrlImage = "https://firebasestorage.googleapis.com/v0/b/linhchidoisos.appspot.com/o/ChuanDoan%2F20.png?alt=media&token=f2764426-42d0-48b8-abc4-1a0e0e5a7cb8"
                     },
                     new ChuanDoan
                     {
                         Id = Guid.Parse("4EDC5C6E-DAA5-48A5-9F1B-D63EE7EB6FC3"),
                         Name = "Viêm kết mạc",
                         Description = "Bệnh viêm kết mạc là bệnh thường gặp, do nhiều nguyên nhân khác nhau gây ra. Bệnh có thể tự khỏi mà không cần điều trị. ",
-                        UrlImage = ""
+                        UrlImage = "https://firebasestorage.googleapis.com/v0/b/linhchidoisos.appspot.com/o/ChuanDoan%2F21.png?alt=media&token=9e29f660-da22-4402-a06c-399e2daea67c"
                     },
                     new ChuanDoan
                     {
                         Id = Guid.Parse("7BA022BB-325A-4058-A4D9-63892767D7ED"),
                         Name = "Gãy xương đòn",
                         Description = "Gãy xương đòn là gãy xương nằm dài nằm ngay dưới da vùng vai, nối giữa xương ức và hệ thống đai vai – cánh tay, có tác dụng như một thanh chống, giằng giữa thân mình và khớp vai.",
-                        UrlImage = ""
+                        UrlImage = "https://firebasestorage.googleapis.com/v0/b/linhchidoisos.appspot.com/o/ChuanDoan%2F22.png?alt=media&token=5ed305ab-386a-4c35-ac2b-7707d09780f9"
                     }
               );
             #endregion

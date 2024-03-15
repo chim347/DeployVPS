@@ -172,8 +172,24 @@ namespace LinhChiDoiSOS.Infrastructure.Identity
                 var userClaims = await _userManager.GetClaimsAsync(user);
                 var roles = await _userManager.GetRolesAsync(user);
                 var roleClaims = roles.Select(q => new Claim("role", q)).ToList();
+                var customer = await _dbContext.Customer.Where(c => c.ApplicationUserId == user.Id).SingleOrDefaultAsync();
+
 
                 List<Claim> authClaims = new List<Claim>();
+
+                if (customer != null)
+                {
+                    var userHaveBooking = await _dbContext.Booking.Where(u => u.CustomerId == customer.Id).SingleOrDefaultAsync();
+                    if (userHaveBooking == null)
+                    {
+                        authClaims.Add(new Claim("isPaid", "false"));
+                    }
+                    else
+                    {
+                        authClaims.Add(new Claim("isPaid", "true"));
+                    }
+                }
+
                 authClaims.Add(new Claim(JwtRegisteredClaimNames.Email, user.Email));
                 authClaims.Add(new Claim(JwtRegisteredClaimNames.Sub, user.UserName));
                 authClaims.Add(new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()));

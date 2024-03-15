@@ -64,11 +64,12 @@ namespace LinhChiDoiSOS.Application.Features.CourseDetails.Queries.GetCourseDeta
                     else if (comboCourse.Name == "Premium") {
                         // check coi có booking chưa, chưa có phải throw thông báo đăng kí đi, còn có rồi
                         // thì hiện cho xem
-                        /*var customer = await _dbContext.Customer.Where(c => c.ApplicationUserId == request.ApplicationUserId).SingleOrDefaultAsync();
+                        var customer = await _dbContext.Customer.Where(c => c.ApplicationUserId == request.ApplicationUserId).SingleOrDefaultAsync();
                         var userHaveBooking = await _dbContext.Booking.Where(u => u.CustomerId == customer.Id).SingleOrDefaultAsync();
-                        if(userHaveBooking == null) {
+                        if (userHaveBooking == null)
+                        {
                             throw new BadRequestException("Please register course for experience");
-                        }*/
+                        }
                         var courseDetail = await _dbContext.CourseDetail
                             .Where(c => c.CourseId == Guid.Parse(request.CourseId) && !c.IsDelete)
                             .SingleOrDefaultAsync();
