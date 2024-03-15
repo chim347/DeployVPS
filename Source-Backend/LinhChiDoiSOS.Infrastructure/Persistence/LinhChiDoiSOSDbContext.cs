@@ -3153,7 +3153,7 @@ Kết luận
                         Id = Guid.Parse("E71A9882-2634-411F-A74C-3A49AE3989B9"),
                         Name = "Viêm xoang",
                         Description = "Viêm xoang là tình trạng viêm nhiễm các túi khí gần mũi và mắt, thường gây đau đầu và áp lực ở vùng mặt. Điều trị bao gồm thuốc và biện pháp giảm triệu chứng.",
-                        UrlImage = ""
+                        UrlImage = "https://drive.google.com/file/d/1wj5O76ORv_qRzr-BF8fqRPEjIHFNqjiD/view?usp=drive_link"
                     },
                     new ChuanDoan
                     {

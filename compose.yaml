@@ -14,6 +14,8 @@ services:
       target: final
     ports:
       - 1234:80
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=host.docker.internal,1434;Database=LinhChiDoiSOSDb;Persist Security Info=True;Uid=sa;Pwd=Cuong123_A;TrustServerCertificate=True
 
 # The commented out section below is an example of how to define a PostgreSQL
 # database that your application can use. `depends_on` tells Docker Compose to
