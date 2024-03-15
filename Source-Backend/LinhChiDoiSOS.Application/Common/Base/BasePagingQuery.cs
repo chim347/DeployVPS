@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿/*using Microsoft.AspNetCore.Mvc;
 
 namespace LinhChiDoiSOS.Application.Common.Base
 {
@@ -10,3 +10,4 @@ namespace LinhChiDoiSOS.Application.Common.Base
         public int? PageIndex { get; set; } = 1;
     }
 }
+*/
