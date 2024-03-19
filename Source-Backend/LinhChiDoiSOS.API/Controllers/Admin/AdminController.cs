@@ -1,4 +1,5 @@
 ﻿using LinhChiDoiSOS.Application.Common.Response;
+using LinhChiDoiSOS.Application.Features.Admins.Commands;
 using LinhChiDoiSOS.Application.Features.Customers.Commands.CreateCustomer;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -21,7 +22,7 @@ namespace LinhChiDoiSOS.API.Controllers.Admin
         [Route("register")]
         [ProducesResponseType(201)]
         [ProducesResponseType(400)]
-        public Task<SOSResponse> Post(CreateCustomerCommand request)
+        public Task<SOSResponse> Post(CreateAdminCommand request)
         {
             var response = _mediator.Send(request);
             return response;

@@ -50,7 +50,7 @@ namespace LinhChiDoiSOS.Application.Features.Admins.Commands
             var emailExist = await _userManager.FindByEmailAsync(request.Email);
             if (emailExist != null)
             {
-                throw new BadRequestException("Customer already exists!");
+                throw new BadRequestException("Admin already exists!");
             }
 
             var user = new ApplicationUser
