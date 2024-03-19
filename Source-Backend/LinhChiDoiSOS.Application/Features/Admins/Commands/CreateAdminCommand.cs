@@ -68,7 +68,7 @@ namespace LinhChiDoiSOS.Application.Features.Admins.Commands
             var result = await _userManager.CreateAsync(user, request.Password);
             if (result.Succeeded)
             {
-                await _userManager.AddToRoleAsync(user, "Admin");
+                await _userManager.AddToRoleAsync(user, "Manager");
                 await _signInManager.SignInAsync(user, isPersistent: false);
             }
             else
