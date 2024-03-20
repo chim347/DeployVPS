@@ -56,7 +56,7 @@ namespace LinhChiDoiSOS.Application.Features.Bookings.Queries
                         CustomerId = customer.Id,
                         DateBooked = item.Created.ToString("dd/MM/yyyy"),
                         IsPremium = customer.IsPremium,
-                        Price = item.Price
+                        Price = item.Price,
                     };
                     result.ListCustomerBookInThisTime.Add(cusBookInThisTime);
                 }
