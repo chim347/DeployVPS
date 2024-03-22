@@ -16,6 +16,7 @@ namespace LinhChiDoiSOS.Application.Features.Bookings.Queries
         public string? Address { get; set; }
         public DateTime? BirthDay { get; set; }
         public string? Image { get; set; }
+        public string? PhoneNumber { get; set; }
     }
     public class GetBookingWaitingCheckCommand : IRequest<List<CustomerWaitingForPremium>>
     {
@@ -55,6 +56,7 @@ namespace LinhChiDoiSOS.Application.Features.Bookings.Queries
                         Fullname = applicationUser!.Fullname,
                         Image = applicationUser!.Image,
                         IsPremium = user.IsPremium,
+                        PhoneNumber = applicationUser!.PhoneNumber
                     };
                     listResult.Add(result);
                 }
