@@ -20,6 +20,7 @@ namespace LinhChiDoiSOS.Application.Features.Customers.Queries
     {
         public Guid Id { get; set; }
         public string? ApplicationUserId { get; set; }
+        public int IsPremium { get; set; }
         public DateTime? Created { get; set; }
 
     }
