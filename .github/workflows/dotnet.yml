@@ -37,7 +37,7 @@ jobs:
       - name: Upload zip sources
         uses: actions/upload-artifact@v2
         with:
-          name: Source-Backend
+          name: Code
           path: site.zip
 
   deploy:
