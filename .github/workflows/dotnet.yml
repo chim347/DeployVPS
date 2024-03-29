@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    name: build Linh-Chi-Doi-SOS
+    name: build Source-Backend
     runs-on: ubuntu-latest
     steps:
 #      - name: Clear useless artifacts
@@ -37,18 +37,18 @@ jobs:
       - name: Upload zip sources
         uses: actions/upload-artifact@v2
         with:
-          name: Code
+          name: Source-Backend
           path: site.zip
 
   deploy:
     needs: build
-    name: deploy Linh-Chi-Doi-SOS
+    name: deploy Source-Backend
     runs-on: self-hosted
     steps:
       - name: Clone source zip
         uses: actions/download-artifact@v2
         with:
-          name: Linh-Chi-Doi-SOS
+          name: Source-Backend
       - name: Deploy to IIS
         shell: powershell
         run: |
