@@ -1,5 +1,6 @@
 ﻿using LinhChiDoiSOS.Application.Common.Response;
 using LinhChiDoiSOS.Application.Features.Customers.Commands.CreateCustomer;
+using LinhChiDoiSOS.Application.Features.Customers.Commands.CreateListCustomer;
 using LinhChiDoiSOS.Application.Features.Customers.Commands.DeleteCustomer;
 using LinhChiDoiSOS.Application.Features.Customers.Commands.UpdateCustomer;
 using LinhChiDoiSOS.Application.Features.Customers.Queries;
@@ -82,6 +83,16 @@ namespace LinhChiDoiSOS.API.Controllers.Customers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
         public Task<SOSResponse> Delete(DeleteCustomerCommand request)
+        {
+            var response = _mediator.Send(request);
+            return response;
+        }
+
+        [HttpPost]
+        [Route("register/list-account-customer")]
+        [ProducesResponseType(201)]
+        [ProducesResponseType(400)]
+        public Task<SOSResponse> PostListAccount(CreateListCustomerCommand request)
         {
             var response = _mediator.Send(request);
             return response;
